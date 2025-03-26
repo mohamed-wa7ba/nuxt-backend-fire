@@ -1,0 +1,56 @@
+{
+  "name": "nuxt-backend-fire",
+  "version": "1.0.4",
+  "main": "./src/module.ts",
+  "types": "./src/types.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/module.js",
+      "types": "./dist/module.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "description": "nuxt-backend-fire for Nuxt.js (Supports Supabase, Firebase, Appwrite and more)",
+  "keywords": [
+    "nuxt-backend-fire",
+    "backend",
+    "firebase",
+    "supabase",
+    "appwrite"
+  ],
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "coverage": "vitest run --coverage",
+    "build": "tsup src/module.ts --format esm --dts --clean --target node16",
+    "dev": "tsup src/module.ts --format esm --dts --watch --target node16",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.13.13",
+    "@vue/test-utils": "^2.4.6",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.9"
+  },
+  "dependencies": {
+    "@directus/sdk": "^19.1.0",
+    "@firebase/auth": "^1.9.1",
+    "@firebase/firestore": "^4.7.10",
+    "@firebase/storage": "^0.13.7",
+    "@nuxt/kit": "^3.16.1",
+    "@nuxt/types": "^2.18.1",
+    "@supabase/supabase-js": "^2.49.3",
+    "appwrite": "^17.0.1",
+    "eslint": "^9.23.0",
+    "firebase": "^11.5.0",
+    "jsdom": "^26.0.0",
+    "prettier": "^3.5.3"
+  }
+}
