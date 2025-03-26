@@ -1,27 +1,9 @@
-# Dependency directories
 node_modules/
-
-# ts dev/build outputs
+.DS_Store
 .output
 .nuxt
-.nitro
-.cache
 dist
-
-# Environment files
+*.local
 .env
 .env.*
 !.env.example
-
-# Editor directories and files
-.idea
-.vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-# System Files
-.DS_Store
-Thumbs.db
